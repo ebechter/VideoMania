@@ -47,7 +47,7 @@ ax=NormRank.sort_values(ascending=False)[0:10].plot.barh(color='green',alpha=0.5
 ax.set_xlabel("Rank")
 ax.set_title("Top 10 Games by Rank")
 plt.tight_layout(h_pad=5)
-plt.savefig('Figure1.pdf')
+plt.savefig('Figure1.png')
 
 
 # Now lets try to visually classify users into a few categories. Typically there are gamers who play
@@ -78,7 +78,7 @@ ax.set_title("Game Activity per User")
 ax.set_ylabel("Hours played")
 plt.xlim(0, 510)
 plt.tight_layout()
-plt.savefig('Figure2.pdf')
+plt.savefig('Figure2.png')
 
 
 # Its pretty clear from this there are a lot of gamers who only own one game (and therefore
