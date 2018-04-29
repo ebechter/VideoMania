@@ -39,7 +39,7 @@ ax=NormRank.sort_values(ascending=False)[0:10].plot.barh(color='green',alpha=0.5
 ax.set_xlabel("Rank")
 ax.set_title("Top 10 Games by Rank")
 plt.tight_layout(h_pad=5)
-plt.show()
+plt.savefig('Figure1.pdf')
 
 
 
