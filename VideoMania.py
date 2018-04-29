@@ -1,4 +1,4 @@
-# VideoMania exploratory data
+# VideoMania: exploratoring the data 
 import numpy as np
 import pandas as pd
 import collections
@@ -22,7 +22,6 @@ steam = steam.loc[steam['Action'] == 'play']
 
 # delete final column
 del steam['Empty']
-
 
 # Lets try and define some kind of ranking index that accounts for both hours played and number 
 # of copies purchased 
@@ -48,20 +47,13 @@ ax=NormRank.sort_values(ascending=False)[0:10].plot.barh(color='green',alpha=0.5
 ax.set_xlabel("Rank")
 ax.set_title("Top 10 Games by Rank")
 plt.tight_layout(h_pad=5)
-# plt.savefig('Figure1.pdf')
-
-
+plt.savefig('Figure1.pdf')
 
 
 # Now lets try to visually classify users into a few categories. Typically there are gamers who play
 # lots of games a little, gamers who play a few games a lot, and some inbetween.  
-
-# For each user, sum their total gaming hours and divide by the total number of games they purchased 
-# That should give an indicati
-
-
-# max hours on a game for each user divided by their total hours played. -> loyal gamers closer to 1
-# merchant gamers closer to 0, casuals spread in the middle 
+# Find the game that has maximum hours played for each user and divide by their total hours played
+# loyal gamers closer to 1. Merchant gamers closer to 0, casuals spread in the middle 
 
 # sns.set_style("ticks")
 
@@ -79,8 +71,6 @@ for i in range(0,steam.ID.nunique()):
 plt.figure(figsize=(10,5))
 ax = plt.gca()
 sc=ax.scatter(countGames,sumHours,c=OneGameMax/sumHours,cmap='viridis',s=50,alpha = 0.5)
-# ax.set_xscale('log')
-# ax.set_yscale('log')
 cb=plt.colorbar(sc)
 cb.set_label('Game Exclusiveness Score')
 ax.set_xlabel("Games Owned ")
@@ -88,7 +78,10 @@ ax.set_title("Game Activity per User")
 ax.set_ylabel("Hours played")
 plt.xlim(0, 510)
 plt.tight_layout()
-# plt.savefig('Figure2.pdf')
+plt.savefig('Figure2.pdf')
 
 
+# Its pretty clear from this there are a lot of gamers who only own one game (and therefore
+# have all their hours in that one game. There are a lot of users who buy lots of games but barely 
+# ever play them.
 
