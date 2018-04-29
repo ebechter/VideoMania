@@ -4,7 +4,13 @@ I plan on looking into non-obvious trends in data sets concerning the videogame 
 
 ## What video game should I play?
 
-If you Google the question, “which video game should I play next?” you will yield about 1.45 million results, and Google’s search results exist the form of quizzes (simple decision trees); clickbait articles (click through slides); and online forums (communal decision making). However, there is no tool present that will accurately choose which video games an individual, couple, or group of individuals would enjoy. In order to begin researching this question, I first looked into which video games, according to the data set I accessed, were most popular. I characterized most popular as being a hybrid between most purchased and games with the most hours played. This yielded these shown in my first figure. The second graphic I produced was intended to visually explore how often people play one game in their library far more than the others. The results are shown in the second figure. 
+If you Google the question, “which video game should I play next?” you will yield about 1.45 million results, and Google’s search results exist the form of quizzes (simple decision trees); clickbait articles (click through slides); and online forums (communal decision making). However, there is no tool present that will accurately choose which video games an individual, couple, or group of individuals would enjoy. In order to begin researching this question, I first looked into which video games, according to the data set I accessed, were most popular. I characterized most popular as being a hybrid between most purchased and games with the most hours played. This yielded these shown in my first figure. 
+
+![](Figure1.png)
+
+The second graphic I produced was intended to visually explore how often people play one game in their library far more than the others. The results are shown in the second figure. 
+
+![](Figure2.png)
 
 ## What is the market significance of these questions?
 PwC projects that the videogame industry will surpass 90 billion dollars by 2020. The video game market is saturated by few top, high performing games, and this creates, in the end users, an effective silo where the games they are recommended across platforms tend to be other high selling games. If a tool could identify games that are enjoyed by a smaller number of users but exhibit a high level of loyalty, we could identify “cult favorites” or “indie games.” Doing this can allow for a possible recommender system to not just contribute to the sales of already top selling games, but allow for a bit of diversity in the picking process.
