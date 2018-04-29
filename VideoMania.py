@@ -63,7 +63,7 @@ plt.tight_layout(h_pad=5)
 # max hours on a game for each user divided by their total hours played. -> loyal gamers closer to 1
 # merchant gamers closer to 0, casuals spread in the middle 
 
-sns.set_style("ticks")
+# sns.set_style("ticks")
 
 UserID = steam.ID.unique()
 countGames = np.zeros(steam.ID.nunique())
@@ -88,7 +88,7 @@ ax.set_title("Game Activity per User")
 ax.set_ylabel("Hours played")
 plt.xlim(0, 510)
 plt.tight_layout()
-plt.savefig('Figure2.pdf')
+# plt.savefig('Figure2.pdf')
 
 
 
